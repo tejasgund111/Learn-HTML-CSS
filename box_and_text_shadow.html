@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+</head>
+<style>
+    .first{
+        display: flex;
+       
+    }
+    .one{
+        margin: 40px 10px;
+        border: 2px solid black;
+        background-color: coral;
+        box-shadow: 15px 15px greenyellow;
+        /* box-shadow: offset-x offset-y color; */
+        /* this is for right and bottom shadow */
+    }
+   
+    .second{
+        display: flex;
+    }
+    .two{
+        margin: 40px 20px;
+        border: 2px solid black;
+        background-color: coral;
+        box-shadow: -15px -15px greenyellow;
+        /* this is for left and top shadow */
+
+    }
+    .third{
+        display: flex;
+    }
+    .three{
+        margin: 40px 20px;
+        border: 2px solid black;
+        background-color: coral;
+        box-shadow: 15px 15px 10px greenyellow;
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* this is for blur the shadow */
+    }
+    .fourth{
+        display: flex;
+    }
+    .four{
+        margin: 40px 20px;
+        border: 2px solid black;
+        background-color: coral;
+        box-shadow: 15px 15px 10px 10px greenyellow;
+        /* box-shadow: offset-x offset-y blur-radius spread_radius color; */
+        /* this is for spread the shadow */
+
+    }
+    .para{
+        font-size: 40px;
+        text-shadow: 2px 2px red;
+    }
+    /* other all the properties are similar with box shadows */
+
+</style>
+<body>
+    <div class="first">
+        <div class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat eligendi impedit vitae pariatur repellat nam vel est soluta, distinctio illo. Beatae laboriosam ipsum eveniet dolores magnam ipsa mollitia quos?</div>
+        <div class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat eligendi impedit vitae pariatur repellat nam vel est soluta, distinctio illo. Beatae laboriosam ipsum eveniet dolores magnam ipsa mollitia quos?</div>
+        <div class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat eligendi impedit vitae pariatur repellat nam vel est soluta, distinctio illo. Beatae laboriosam ipsum eveniet dolores magnam ipsa mollitia quos?</div>
+        <div class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat eligendi impedit vitae pariatur repellat nam vel est soluta, distinctio illo. Beatae laboriosam ipsum eveniet dolores magnam ipsa mollitia quos?</div>
+    </div>
+
+    <div class="second">
+        <div class="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque eos minima iusto voluptates dolores atque magni cum error obcaecati fuga facilis minus aut voluptas hic, assumenda provident in quasi mollitia?</div><div class="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque eos minima iusto voluptates dolores atque magni cum error obcaecati fuga facilis minus aut voluptas hic, assumenda provident in quasi mollitia?</div><div class="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque eos minima iusto voluptates dolores atque magni cum error obcaecati fuga facilis minus aut voluptas hic, assumenda provident in quasi mollitia?</div>
+    </div>
+    <div class="third">
+        <div class="three">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque eos minima iusto voluptates dolores atque magni cum error obcaecati fuga facilis minus aut voluptas hic, assumenda provident in quasi mollitia?</div><div class="three">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque eos minima iusto voluptates dolores atque magni cum error obcaecati fuga facilis minus aut voluptas hic, assumenda provident in quasi mollitia?</div><div class="three">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque eos minima iusto voluptates dolores atque magni cum error obcaecati fuga facilis minus aut voluptas hic, assumenda provident in quasi mollitia?</div>
+    </div>
+    <div class="fourth">
+        <div class="four">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque eos minima iusto voluptates dolores atque magni cum error obcaecati fuga facilis minus aut voluptas hic, assumenda provident in quasi mollitia?</div><div class="four">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque eos minima iusto voluptates dolores atque magni cum error obcaecati fuga facilis minus aut voluptas hic, assumenda provident in quasi mollitia?</div><div class="four">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque eos minima iusto voluptates dolores atque magni cum error obcaecati fuga facilis minus aut voluptas hic, assumenda provident in quasi mollitia?</div>
+    </div>
+    <br>
+    <div class="para">This is because of the text shadows</div>
+    
+</body>
+</html>

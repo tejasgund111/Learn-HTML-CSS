@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+</head>
+<style>
+    .container{
+        height: 544px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;          /* initializa the container as the flexbox */
+
+        /* flex properties for flex container */
+
+        flex-direction: row;                        
+        /*default value of flex direction is row*/
+        /* flex-direction: column;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse; */
+
+        flex-wrap: wrap;
+        /* thisproperty is used for the changing the layouts of our site for other devices */
+        /* flex-flow: row wrap; by this way we can set both the direction and the wrap also by putting the direction first and then the wrap */
+
+        justify-content: center;
+        /* it gives the all the things in the centre */
+
+        justify-content: space-between;
+        /* it gives the equal space between the boxes but does not gives the space from the end sides */
+
+        justify-content: space-evenly;
+        /* it gives the same space for all the boxes also for the end corners also */
+
+        align-items: center;       /* it centres the items in the vertically centered */
+        align-items: flex-end;       /* it gives the items at the end of the div */
+        align-items: flex-start;      /* it gives the items at the top or the start of the div */
+
+        
+    }
+    .item{
+        height: 200px;
+        width: 200px;
+        background-color:tomato ;
+        border: 2px solid rgb(27, 177, 27);
+        margin: 10px;
+        padding: 3px;
+    }
+    #item1{
+        /* order: 2; */
+        flex-basis: 330px;
+        /* when the flex direction is set to the row then the flex basis property will control the width */
+        /* when the flex direction is set to the column then the flex basis property will control the height */
+    }
+    /* which item having the more order the item will be shown at the end of the container */
+    #item2{
+        /* order: 4; */
+    }
+    #item3{
+        align-self: flex-start;
+        align-self: flex-end;
+        align-self: center;
+    }
+
+</style>
+<body>
+    <h1>This is the Flexbox</h1>
+    <div class="container">
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+        <!-- <div class="item" id="item4">forth box</div>
+        <div class="item" id="item5">fifth box</div> -->
+        <!-- its property is now display block so it takes the whole width
+        but if we changes to the display inline it will take only that space which it actually have -->
+    </div>
+    
+</body>
+</html>

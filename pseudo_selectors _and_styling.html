@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors and more design</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: khaki;
+            padding: 88px;
+            margin: auto;
+            width: 278px;
+           
+        }
+        /* text decoration removes the underline of the read more */
+        a{
+            text-decoration: none;
+        }
+        /* hover property means what change will be observed when we let the cursor on the button */
+        a:hover{
+            color: rgb(233, 38, 233);
+            background-color: rgb(169, 202, 201);
+        }
+        a:visited{
+            color: rgb(192, 206, 71);
+        }
+        a:active{
+            background-color: paleturquoise;
+        }
+        .btn:hover{
+            background-color: palevioletred;
+            border: 2px solid black;
+        }
+        .btn{
+            font-family: inherit;
+            background-color: lemonchiffon;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 20px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora provident cumque nemo recusandae alias magni quod. Aspernatur temporibus tempora voluptatum praesentium ex, debitis architecto soluta neque maiores nostrum at dolor.</p>
+        <a href="https://google.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+          </svg>
+
+    </div>
+    
+</body>
+</html>

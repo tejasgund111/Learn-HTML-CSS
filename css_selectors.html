@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        
+        p{
+            color: red;
+        }
+        /* the above line changed all paragraph's color to red */
+        #p1{
+            color: sienna;
+        }
+        /* the above line changed color of that line which have id p1 */
+        .u1{
+            color: yellow;
+        }
+        .u2{
+            background-color: turquoise;
+        }
+
+        /* the above line changed color of that line which have clas u1 */
+        span,footer{
+            background-color: violet;
+        }
+        /* above line shows grouping selector */
+       
+    </style>
+  
+    
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <p>This is simple paragraph</p>
+    <p>This is simple paragraph</p>
+    <p id="p1">This color is changed due to id</p>
+    <p class="u1 u2">This color is changed due to the class</p>
+    
+    <div>
+        <p>This is simple paragraph</p>
+
+    </div>
+    <span>this is span</span>
+    <footer>this is footer</footer>
+    
+</body>
+</html>

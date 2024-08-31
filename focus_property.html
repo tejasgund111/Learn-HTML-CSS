@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus</title>
+</head>
+<style>
+    .in{
+        margin: auto;
+        width: 700px;
+    }
+    label{
+        font-size: 44px;
+    }
+    input[type="text"]{
+        font-size: 20px;
+        border-radius: 11px;
+        text-align: center;
+        width: 200px;
+        transition: 2s;
+        /* transition-property: width;
+        transition-duration: 0.8s;
+        transition-delay: 1s; */
+    }
+    /* because of the focus the size of the input holder will increase after click */
+    input[type="text"]:focus{
+        width:300px ; 
+        
+    }
+    .for{
+        display: flex;
+        padding: 3px;
+    
+        
+    }
+ 
+
+
+</style>
+<body>
+    <h1>This is the use of the focus property</h1>
+    <div class="in">
+        <label class="for" for="text">Enter text : </label>
+        <input class="for" type="text" id="text" placeholder="Enter the text"><br>
+        <input class="for" type="button" value="submit">
+    </div>
+    
+</body>
+</html>

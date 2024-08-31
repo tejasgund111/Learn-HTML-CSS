@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css position: static(default),absolute,relative, fixed,stucky */
+        .container{
+            border: 2px solid black;
+            background-color: burlywood;
+            height: 3444px;
+        }
+        .box{
+            /* inline block gives all the content in one line */
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box3{
+            /* relative: relative to normal position */
+            /* absolute: relative to the position of the first parent */
+
+            /* position: relative; */
+            /* top: 30px;
+            left: 30px; */
+            /* fixed: if we scroll the page then also the position remain same  */
+            /* position: fixed;
+            right: 4px; */
+
+
+            position: sticky;
+            top: 4px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="box1" class="box">1</div>
+    <div id="box2" class="box">2</div>
+    <div id="box3" class="box">3</div>
+    <div id="box4" class="box">4</div>
+
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font size units</title>
+    <style>
+        html {
+            font-size: 25px;
+        }
+        .container {
+            border: 2px solid red;
+            width: 400px;
+            /* height: 300px; */
+            height: 100vh;
+            width: 100vw;
+            
+            /* it takes full height and width by this way 100vh for height and the 100vw for width */
+            /* it takes the whole view port height and the width */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: larger;
+        }
+  
+        #first {
+            font-size: 3em;
+            /* em means the multiple of the parent size */
+        }
+
+        #second {
+            font-size: 3rem;
+            /* rem means the multiple of the base means html */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is the first heading</h1>
+        <h1 id="second">This is the second heading</h1>
+        <h1 id="third">This is the third heading</h1>
+    </div>
+
+</body>
+
+</html>
